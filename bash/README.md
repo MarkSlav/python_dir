@@ -1,0 +1,1 @@
+All studies about Bash
