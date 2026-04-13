@@ -17,7 +17,7 @@ str(-4)
 #int (x)
 int("101")
 int(2.78)
-int("99.99")
+#int("99.99")
 
 #float(x)
 float(18.214)
@@ -63,12 +63,12 @@ len("")
 
 #min(x, y)
 #Returns the lesser of the x and y values. The lesser string comes first in a case-sensitive dictionary order: 0-9, A-Z, a-z.
-min("aardvark", "max")
+min("aardvark", "zebra")
 min("python", "3")
 min("adam","Adam")
 
 #max(x, y)
 #Returns the greater of the x and y values. The greater string comes last in a case-sensitive dictionary order: 0-9, A-Z, a-z.
-max("aardvark, "max")
+max("aardvark", "zebra")
 max("chalie", "Zia")
 max("word1","word2","word3")
