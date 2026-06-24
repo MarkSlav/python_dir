@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Python on the Web</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 640px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        line-height: 1.5;
+      }
+      pre {
+        background: #f4f4f5;
+        padding: 1rem;
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+      label {
+        display: block;
+        margin: 1rem 0;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1rem;
+        box-sizing: border-box;
+      }
+      button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .note {
+        color: #52525b;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>See your Python on a web page</h1>
+
+    <p class="note">
+      In a <code>.py</code> file you use <code>input()</code> in the terminal.
+      In the browser, an HTML form plays the same role.
+    </p>
+
+    <h2>Python you are learning</h2>
+    <pre>name = input("What's your name? ")
+print("Hello, " + name + "!")</pre>
+
+    <h2>Try it in the browser</h2>
+    <form action="/hello" method="post">
+      <label>
+        What's your name?
+        <input type="text" name="name" placeholder="Type your name" required />
+      </label>
+      <button type="submit">Run (like pressing Enter after input)</button>
+    </form>
+  </body>
+</html>

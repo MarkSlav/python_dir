@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Result</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 640px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        line-height: 1.5;
+      }
+      pre {
+        background: #f4f4f5;
+        padding: 1rem;
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+      .output {
+        background: #ecfdf5;
+        border: 1px solid #6ee7b7;
+        padding: 1rem;
+        border-radius: 8px;
+        font-size: 1.25rem;
+      }
+      a {
+        color: #2563eb;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>What Python did</h1>
+
+    <h2>1. Got a name</h2>
+    <p>Terminal version asks with <code>input()</code>. Here, the form sent:</p>
+    <pre>name = "{{ name }}"</pre>
+
+    <h2>2. Built the message (same as your <code>print</code> line)</h2>
+    <pre>message = "Hello, " + name + "!"</pre>
+
+    <h2>3. Output (what <code>print()</code> would show)</h2>
+    <div class="output">{{ message }}</div>
+
+    <p><a href="/">Try another name</a></p>
+  </body>
+</html>
